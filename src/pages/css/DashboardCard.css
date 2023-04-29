@@ -1,15 +1,21 @@
 .dashboardCard{
     margin-top: 40px;
-    margin-right: 0px;
-    margin-left: 25px
+    
+    /* margin-right: 0px;
+    margin-left: -20px; */
+    /* background-color: red; */
+    justify-content: center;
+    margin-left: -10px;
+    /* float: right ; */
+    /* width: 100%; */
 }
 
 
 .outerBox{
     background-color: orangered;
-    border: 2px solid orangered;
-    border-radius: 10px;
-    margin-left: 30px;
+    border: 1px solid orangered;
+    border-radius: 11px;
+    margin-left: 20px;
     
     /* border-bottom-left-radius: 10px;
     border-top-left-radius: 10px; */
@@ -25,39 +31,44 @@
     border-top-left-radius: 10px; */
     border-radius: 10px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     
 }
 .h6{
     margin-top: -31px;
-    margin-left: -135px;
+    margin-left: -90px;
+    font-size: small;
 }
 .percentage{
     margin-top: -31px;
-    margin-right: -165px;
+    margin-right: -115px;
+    font-size: small;
     color: rgb(12, 189, 12);
 }
 .num{
-    margin-left: -195px;
+    margin-left: -125px;
+    font-size: small;
 }
 .newOder{
-    margin-left: -110px;
+    margin-left: -60px;
     text-decoration: none;
+    font-size: small;
 }
 .newOder:hover{
     text-decoration: none;
 }
 .viewAllOrders{
-    margin-left: -115px;
+    margin-left: -65px;
     /* text-decoration: none; */
     color: purple;
+    font-size: small;
 }
 .viewAllOrders:hover{
     text-decoration: none;
     
 }
 .dashboardCardIcon{
-    margin-right: -165px;
+    margin-right: -145px;
     margin-top: -30px;
     margin-bottom: -30px;
     color: orangered;

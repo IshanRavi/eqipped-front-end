@@ -1,6 +1,6 @@
 .logo{
     height: 100%;
-    width: 50%;
+    width: 40%;
     /* margin-top: -20px; */
     /* background-color: brown; */
   }
@@ -13,17 +13,20 @@
     /* padding: 2px; */
     /* border: 1px solid currentColor; */
     border-radius: 50px;
+   
   }
   input[type="search"] {
     border: none;
     background: transparent;
     margin: 0;
+    margin-right: 0px;
     width: 500px;
     padding: 7px 8px;
     font-size: 14px;
     color: inherit;
     border: 1px solid transparent;
     border-radius: inherit;
+    
   }
   
   
@@ -79,8 +82,11 @@
   /* Navbar container */
   .navbar1 {
     /* overflow: hidden; */
-    background: linear-gradient(to right ,#98a0a3,#dbe4e7,#d2dee2,#98a0a3);
+    background: linear-gradient(to left ,#98a0a3,#dbe4e7,#d2dee2,#98a0a3);
     /* font-family: Arial; */
+    /* box-shadow: 5px 10px 50px #706e6e; */
+    padding-top: 5px;
+    padding-bottom: 0px;
     
   }
   h3{

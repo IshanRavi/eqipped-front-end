@@ -4,20 +4,22 @@
         padding: 0;
         display: flex;
         justify-content: center;
+        /* margin-right: 9%; */
         align-items: center;
         min-height: 85vh;
         font-family: 'Jost', sans-serif;
-        /* background: linear-gradient(to right ,#3c90aa,#afd4e9,#afd4e9,#3c90aa); */
-        background: linear-gradient(to right ,#98a0a3,#dbe4e7,#d2dee2,#98a0a3);
-        /* background: linear-gradient(to bottom, #5646e9, #302b63, #24243e); */
+
+     
+        /* background: linear-gradient(to right ,#98a0a3,#dbe4e7,#d2dee2,#98a0a3); */
+      
     }
-   
     
    
     
     .main{
         width: 350px;
         height: 500px;
+        background: linear-gradient(to right,#dbe4e7,#dbe4e7,#d2dee2,#dbe4e7);
         /* background: rgb(187, 105, 58); */
         /* background: rgba(189, 71, 35, 0.842); */
         /* background: rgb(63, 104, 126); */

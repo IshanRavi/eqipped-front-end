@@ -7,20 +7,14 @@ import DashboardCards from '../../pages/view/DashboardCard'
 function Dashboard() {
 
   return (
-    <div>
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-1">
-            <ul class="list-group list-group-flush">
-              <Sidebar />
-            </ul>
-          </div>
-          <div class="col-11">
-            <DashboardCards />
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+
+      {/* <div style={{ background: 'red' }}> */}
+
+        <DashboardCards />
+        
+      {/* </div> */}
+    </>
   )
 }
 

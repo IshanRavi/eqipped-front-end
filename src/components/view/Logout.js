@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logout = () => {
 
-    localStorage.clear();
+    // localStorage.clear();
     
     // window.location.reload();
 
