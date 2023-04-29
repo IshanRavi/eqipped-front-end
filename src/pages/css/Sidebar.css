@@ -1,0 +1,78 @@
+.sidenav {
+    /* height: 100%; Full-height: remove this if you want "auto" height */
+    /* width: 160px; Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /*  Stay on top */
+    /* top: 0; Stay at the top */
+    /* left: 0; */
+    /* background-color: #111; Black */
+    /* overflow-x: hidden; Disable horizontal scroll */
+    /* padding-top: 20px; */
+    /* padding-bottom: 100px; */
+}
+
+
+.sidebar {
+    background: linear-gradient(to bottom, #98a0a3, #dbe4e7, #d2dee2, #98a0a3);
+    text-align: left;
+    padding-left: 60px;
+
+}
+
+.sidebar:hover {
+    /* background: linear-gradient(to bottom ,#58a4c0,#dbe4e7,#dbe4e7,#58a4c0); */
+    background: linear-gradient(to bottom, #62bada, #dbe4e7, #dbe4e7, #62bada);
+
+}
+
+.sidebarProfile {
+    /* background: linear-gradient(to bottom ,#98a0a3,#dbe4e7,#d2dee2,#98a0a3); */
+    margin-top: 10px;
+    background: transparent;
+    /* text-align: center; */
+    /* position: relative ; */
+    /* padding-left: 80px; */
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(35, 72, 107);
+    display: block;
+    /* position: relative; */
+    /* background-color: red; */
+    /* margin: 0px; */
+    /* font-size: medium; */
+}
+
+.link:hover {
+    text-decoration: none;
+    color: rgb(185, 88, 8)
+}
+
+.sidebarLogo {
+    /* padding-top: 0px; */
+    margin-left: -35px;
+    position: absolute;
+}
+
+.sidebarImg {
+    border-radius: 10px;
+    /* margin-left: -80px; */
+    width: 100px;
+
+}
+#profile{
+    display: inline;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+#name{
+    /* text-align: left; */
+    
+}
+#post{
+    /* text-align: left; */
+}
