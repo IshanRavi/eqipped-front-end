@@ -10,7 +10,8 @@
   
   .link:hover {
     text-decoration: none;
-    color: rgb(185, 88, 8)
+    color: rgb(185, 88, 8);
+    /* box-shadow: 5px 10px 50px #706e6e; */
   }
   .chart{
     margin-top: 20px;

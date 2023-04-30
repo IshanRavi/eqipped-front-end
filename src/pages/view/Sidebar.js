@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 export default function Sidebar() {
 
     var isLoggedIn = localStorage.getItem('isLoggedIn');
+    var userData = JSON.parse(localStorage.getItem('userData'));
+    console.log(userData);
 
     return (
         <>
@@ -25,8 +27,9 @@ export default function Sidebar() {
 
                                 <Link className='' to={'/edit'}><span className='material-symbols-outlined sidebarLogo'>edit_square</span></Link>
                             </div>
-                            <h6 id='name'>Aman Kumar</h6>
-                            <h6 id='post'>Tech Lead</h6>
+                            <h6 id='name'>{userData.firstName}&nbsp;{userData.lastName}</h6>
+                            <h6 id='post'>{userData.profile}</h6>
+                            <h6 id='post'>{userData.roleid.roleName}</h6>
                         </li>
                         <Link to={'/'} className='link'><li class="list-group-item sidebar "> <span className='material-symbols-outlined sidebarLogo'>home_app_logo</span>Home</li></Link>
                         <Link to={'/dashboard'} className='link'><li class="list-group-item sidebar "> <span className='material-symbols-outlined sidebarLogo'>empty_dashboard</span>Dashboard</li></Link>

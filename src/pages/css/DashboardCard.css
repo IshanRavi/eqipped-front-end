@@ -11,6 +11,7 @@
 }
 
 
+
 .outerBox{
     background-color: orangered;
     border: 1px solid orangered;
@@ -22,6 +23,9 @@
     /* padding-top: 25px;
     padding-bottom: 25px; */
 }
+.outerBox:hover{
+    
+}
 .innerBox{
     /* background-color: blue; */
     background: linear-gradient(to right ,#dbe4e7,#dbe4e7,#d2dee2,#d2dee2);
@@ -32,6 +36,11 @@
     border-radius: 10px;
     padding-top: 40px;
     padding-bottom: 30px;
+    
+}
+.innerBox:hover{
+    box-shadow: 5px 10px 50px #706e6e;
+    /* margin: 10px;    */
     
 }
 .h6{
