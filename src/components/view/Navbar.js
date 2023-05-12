@@ -4,6 +4,10 @@ import { useState, useEffect } from 'react';
 import { Router, Route, Link, RouteOutlet } from 'react-router-dom';
 import Sidebar from '../../pages/view/Sidebar';
 import { useNavigate } from 'react-router-dom';
+import Cart from '../../pages/view/Cart';
+
+
+
 const Navbar = () => {
 
   var isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -27,6 +31,7 @@ const Navbar = () => {
 
   return (
     <>
+    <Cart />
       <nav style={{ background: '' }} class="navbar navbar-expand-lg sticky-top navbar1">
         <div class="navbar-nav container">
           <Link to={'/'} ><img class="logo" src="eqippedLogo.png" /></Link>
@@ -61,18 +66,7 @@ const Navbar = () => {
                 </li>
               )
               }
-              {/* <li class="nav-item dropdown">
-                <a id="eml" class="nav-link active number" aria-current="page" href="#"><span class="material-symbols-outlined">person_add</span>&nbsp;&nbsp;SignUp</a>
-
-              </li>
-              <li class="nav-item">
-                <a id="eml" class="nav-link active number" aria-current="page" href="#"><span class="material-symbols-outlined">favorite</span>&nbsp;&nbsp;WatchList</a>
-
-              </li>
-              <li class="nav-item">
-                <a id="eml" class="nav-link active number" aria-current="page" href="#"><span class="material-symbols-outlined">shopping_cart</span>&nbsp;&nbsp;Cart</a>
-
-              </li> */}
+  
 
               <li class="nav-item">
 

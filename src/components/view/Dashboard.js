@@ -3,7 +3,7 @@ import React from 'react'
 import '../css/Dashboard.css'
 import Sidebar from '../../pages/view/Sidebar'
 import DashboardCards from '../../pages/view/DashboardCard'
-// import Graph from '../../pages/view/Graph'
+import DashboardGraph from '../../pages/view/DashboardGraphs'
 function Dashboard() {
 
   return (
@@ -12,6 +12,8 @@ function Dashboard() {
       {/* <div style={{ background: 'red' }}> */}
 
         <DashboardCards />
+
+        <DashboardGraph />
         
       {/* </div> */}
     </>

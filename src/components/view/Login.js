@@ -13,7 +13,7 @@ const Login = () => {
     password: ''
   });
 
-  
+
 
   const navigate = useNavigate();
   // const [isLoggedIn, setIsLoggedIn] = useState(false); // State variable to track login status
@@ -55,7 +55,7 @@ const Login = () => {
         else if (response.ok) {
 
           const jsonData = await response.json();
-         
+
           // Handle successful login response
 
           console.log(jsonData);
@@ -65,7 +65,14 @@ const Login = () => {
             isLoggedIn = true
             localStorage.setItem('isLoggedIn', isLoggedIn);
             console.log('is logged In : ' + localStorage.getItem('isLoggedIn'));
-            navigate('/dashboard');
+            if (
+              jsonData.USER.role.roleName == 'Admin'
+            ) {
+              navigate('/dashboard')
+            } else {
+              navigate('/')
+            }
+
             window.location.reload();
             // localStorage.clear();
             // localStorage.getItem('isLoggedIn');
@@ -88,7 +95,7 @@ const Login = () => {
       console.error(err);
     }
   }
-  
+
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -97,7 +104,7 @@ const Login = () => {
       [name]: value
     }));
   }
-  
+
 
   return (
     <div>
@@ -129,7 +136,7 @@ const Login = () => {
 
           <div class="login">
 
-            <ForgetPassword/>
+            <ForgetPassword />
 
           </div>
 

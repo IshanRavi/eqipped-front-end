@@ -1,0 +1,15 @@
+.add{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.btn2{
+    background-color:rgb(234, 72, 13) ;
+    width: 80px;
+    color: white;
+    border-color:white ;
+    border-radius: 10px;
+
+    /* margin-left: -110px; */
+}

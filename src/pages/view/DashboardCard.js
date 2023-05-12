@@ -1,9 +1,67 @@
 import React from 'react'
 import '../css/DashboardCard.css'
 import { Link } from 'react-router-dom';
-
+import { ToastContainer, toast } from 'react-toastify';
+import baseUrl from '../../helper/helper';
 
 function DashboardCards() {
+  const createAdmin = async (event) => {
+    event.preventDefault();
+    try {
+
+
+
+      const response = await fetch(`${baseUrl}/user/`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+
+      });
+      if (response.status == 503) {
+        toast('Server is down', {
+          position: 'top-center'
+        });
+      } else if (response.status == 500) {
+        toast('Unable To Fetch Vendor Data', {
+          position: 'top-center'
+        });
+      }
+      else if (response.ok) {
+        const count = 0
+        const jsonData = await response.json();
+
+        const length = Object.keys(jsonData).length;
+        
+        // jsonData.forEach(element => {
+        //   count++
+        // });
+
+
+        console.log('This is count')
+        console.log(length);
+
+
+
+
+
+        console.log(jsonData);
+
+
+
+      } else {
+
+        throw new Error('Failed to Create');
+      }
+
+    } catch (err) {
+      // Handle error
+      toast('Server is down', {
+        position: 'top-center'
+      });
+      console.error(err);
+    }
+  }
 
   return (
     <>
@@ -25,7 +83,7 @@ function DashboardCards() {
               <h6 className='h6'>Total Products</h6>
               <p className='percentage'>+16.44%</p>
               <h6 className='num'> 556</h6>
-              <Link className='newOder'>256 New Products</Link>
+              <Link className='newOder' onClick={createAdmin}>256 New Products</Link>
               <br />
               <Link className='viewAllOrders'>View All Products</Link>
               <p className='dashboardCardIcon'><span className='material-symbols-outlined'>science</span></p>
