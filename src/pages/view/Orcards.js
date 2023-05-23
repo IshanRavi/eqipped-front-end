@@ -42,8 +42,9 @@ function Orcards() {
         <li>Monthly</li>
     </nav>
 </div>
-
-<div className='largediv1'>
+<div class="table-responsive">
+  <table class="table">
+  <div className='largediv1'>
     <nav>
         <li>No.</li>
         <li>Product ID</li>
@@ -57,6 +58,8 @@ function Orcards() {
         <li>Action</li>
     </nav>
     </div>
+  </table>
+</div>
   </>
   )
 }

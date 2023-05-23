@@ -124,4 +124,14 @@
 
 }
 
+#buttonCart{
+  border-radius: 30px;
+  background-color: yellow;
+  font-size: xx-small;
+  padding-left: 4px;
+  padding-right: 5px;
+  position: absolute;
+  margin-left: 25px;
+
+}
   

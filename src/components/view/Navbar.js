@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Router, Route, Link, RouteOutlet } from 'react-router-dom';
 import Sidebar from '../../pages/view/Sidebar';
 import { useNavigate } from 'react-router-dom';
-import Cart from '../../pages/view/Cart';
+
 
 
 
@@ -31,7 +31,6 @@ const Navbar = () => {
 
   return (
     <>
-    <Cart />
       <nav style={{ background: '' }} class="navbar navbar-expand-lg sticky-top navbar1">
         <div class="navbar-nav container">
           <Link to={'/'} ><img class="logo" src="eqippedLogo.png" /></Link>
@@ -54,9 +53,19 @@ const Navbar = () => {
 
 
               {isLoggedIn ? (
-                <li class="nav-item">
-                  <Link id="eml" class="nav-link inactive number" aria-current="page" onClick={handleTagHeat}><span class="material-symbols-outlined">logout</span>&nbsp;logout</Link>
-                </li>
+                <>
+                  <li class="nav-item">
+
+                    <div id="buttonCart">1</div>
+                    <Link id="eml" to={'/cart'} class="nav-link inactive number" aria-current="page" ><span class="material-symbols-outlined">shopping_cart</span>&nbsp;Cart</Link>
+
+                    {/* <Link id="eml" class="nav-link inactive number"><Cart /></Link> */}
+                  </li>
+                  <li class="nav-item">
+                    <Link id="eml" class="nav-link inactive number" aria-current="page" onClick={handleTagHeat}><span class="material-symbols-outlined">logout</span>&nbsp;logout</Link>
+                  </li>
+                </>
+
 
 
               ) : (
@@ -66,7 +75,7 @@ const Navbar = () => {
                 </li>
               )
               }
-  
+
 
               <li class="nav-item">
 
